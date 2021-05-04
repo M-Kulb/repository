@@ -1,0 +1,59 @@
+body {
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    margin: 0;
+    font-size: 0;
+   }
+
+
+.box {
+    width:33.33333%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    zoom: 1;
+}
+
+.pirmas {
+    background-color: yellow;
+    height: 100px;
+    /* width:33.33333%; */
+    
+    
+}
+.antras {
+    background-color: green;
+    height: 100px;
+    /* width:33.33333%; */
+    
+    
+}
+.trecias {
+    background-color: red;
+    height:100px;
+    /* width:33.33333%; */
+   
+}
+
+@media screen and (max-width: 1000px) {
+    
+        .pirmas , .antras{
+         width: 50%;
+        }
+
+         .trecias{
+         width:100%;
+         }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .box {
+        width:100%
+    }
+
+}
+
+

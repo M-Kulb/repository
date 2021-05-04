@@ -1,0 +1,21 @@
+.left {
+    float: left;
+    max-width: 150px ;
+    height: auto;
+    padding: 10px;
+}
+
+.right {
+    float: right;
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+.stop {
+    clear: both;
+}

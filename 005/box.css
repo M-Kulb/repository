@@ -1,0 +1,33 @@
+body {
+    background-color: mistyrose;
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    margin: 0;
+
+}
+
+div {
+    box-sizing: border-box;
+    zoom: 1;
+    letter-spacing: normal;
+    text-rendering: auto;
+}
+
+.box {
+    border: 3px solid peru;
+    background-color: purple;
+    width: 32%;
+    height: 90px;
+    display: inline-block;
+}
+
+.box span {
+    color: red;
+    display: block;
+    width: 40%;
+    height: 20px;
+    background-color: salmon;
+    position: relative;
+    top: 40%;
+
+}

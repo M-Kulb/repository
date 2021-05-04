@@ -1,0 +1,12 @@
+.pseudo {
+    background-color: darkkhaki;
+    width: 100px;
+    height: 100px;
+}
+
+.pseudo:hover {
+    background-color: darkorange;
+    width: 150px;
+    height: 150px;
+
+}

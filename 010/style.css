@@ -1,0 +1,23 @@
+div {
+    color:yellow
+}
+
+div :first-child {
+color: blue;
+}
+
+div :last-child {
+    color: red;
+}
+
+ul {
+color: brown;
+}
+
+ul :first-child {
+    color: black;
+}
+
+ul :last-child {
+    display: none ;
+}
