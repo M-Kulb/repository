@@ -16,7 +16,6 @@ body {
 }
 
 .headercont {
-    /* background-color: #182e49; */
     padding: 30px 30px 0px 30px;
     max-width: 1000px;
     margin:0 auto;
@@ -26,7 +25,6 @@ body {
     width: 50%;
     display: inline-block;
     position: relative;
-    /* vertical-align: middle; */
 }
 
 
@@ -142,7 +140,6 @@ div.login{
     font-size: 14px;
     background-color: #182e49;
     color:white;
-    /* vertical-align: middle; */
     padding: 0;
 }
 
@@ -249,14 +246,14 @@ div.cart{
         top:5px;
         font-size: 14px;
         left: 0;
-        padding: 10px
-        
+        padding: 10px;
         }
 
-      .dropdown-content a {
+        .dr1.dropdown-content a {
         color:#8ab3d5;
         background-color: white;
         text-align: left;
+       
 
       }
 
@@ -305,7 +302,6 @@ div.cart{
 
       .shop{ 
           width: 100%;
-          /* display: inline-block; */
           position: relative;
           vertical-align: middle;
           padding: 0px 30px;
@@ -314,7 +310,6 @@ div.cart{
       }
 
       .shop.left {
-        width:50%;
         position:relative;
         vertical-align: middle;
         display: inline-block;
@@ -322,7 +317,6 @@ div.cart{
       }
 
       .shop.right {
-        width:50%;
         position:relative;
         vertical-align: middle;
         display: inline-block;
@@ -371,7 +365,6 @@ div.cart{
    
     .shopfor {
       width: 100%;
-      /* display: inline-block; */
       position: relative;
       vertical-align: middle;
       padding: 0px 30px;
@@ -391,22 +384,8 @@ div.cart{
   border: 1px solid #ececec;
   margin: 0px 0px 0px 30px;
   display: inline-block;
-  /* z-index: 10; */
-  }
+ }
 
- 
-
-   /* .sfcont a::after  {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.02);
-    z-index: 5;
-  } */
-  
 
 .sfcont a{
   
@@ -580,7 +559,7 @@ footer {
 }
 
 .git {
-  width: 50%;
+  width: 49%;
   /* display: block; */
   display: inline-block;
   vertical-align: top;
@@ -610,14 +589,24 @@ width: 33.33333%;
 /* display: block; */
 display: inline-block;
 vertical-align: top;
-padding: 0px 0px 0px 30px;
+/* padding: 0px 0px 0px 30px; */
 }
 
 .email {
   display: inline-block;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
-} 
+  } 
+
+  .email::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .email button, .email input {
+    float: left;
+  }
 
 .nl input{
   
@@ -713,6 +702,8 @@ ul.visa{
 
 }
 
+
+
 .footer-cont hr {
   margin: 15px 0px;
 }
@@ -725,3 +716,229 @@ ul.visa{
 .cpr a:hover {
   color:black
 }
+
+@media screen and (max-width: 470px) {
+  .shop.right {
+    text-align: left;
+  }
+
+  .ql {
+    text-align: center;
+   }
+   .ql h4 {
+    padding-left: 0px
+}
+
+.ql ul{
+  padding-left: 0;
+}
+
+  .git {
+    text-align: center;
+    padding: 0;
+  }
+
+  .git p {
+    text-align: center;
+
+  }
+ 
+
+  .nl {
+    text-align: center;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header-mobile {
+    background-color: #182e49;
+    position: relative;
+    /* padding: 0px 15px; */
+  }
+
+  
+
+  .side-menu-container {
+    width: 100%;
+    background-color: #182e49;
+    padding: 15px 20px ;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ;
+    z-index: 10;
+    letter-spacing: normal;
+    min-height: calc(100vh - 50px);
+}
+
+
+.side-menu-container ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+}
+
+.side-menu-container ul:first-child {
+  padding: 0;
+}
+
+
+.side-menu-container li {
+    padding: 15px;
+    border-bottom: 1px solid #315e96;
+    text-align: left;
+}
+
+.side-menu-container li a {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+  
+    
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked + div {
+  left:0;
+  top: 50px
+}
+
+#menu + div {
+  top: 1000px;
+}
+  
+ .hamburger::after { 
+  top: 4px;
+}
+
+.hamburger::before {
+  bottom: 7px;
+} 
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color:white;
+  border-radius: 2px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger::before, .hamburger::after {
+content: '';
+width: 30px;
+height: 3px;
+display: block;
+background-color:white;
+border-radius: 2px;
+position: relative;
+}
+
+.input-mobile {
+  display: inline-block;
+  border: 1px solid white;
+  
+}
+
+.input-mobile input {
+  background-color:  #182e49;
+  padding: 10px 60px 10px 10px;
+  font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+ 
+}
+
+.input-mobile input[type=text]::placeholder {
+  color:white
+}
+
+.input-mobile input[type=text] {
+  overflow: hidden;
+  outline: none;
+}
+
+.navbar-mobile {
+  position:fixed;
+  background-color: #182e49 ;
+  width: 100%;
+  display: table;
+  padding: 0px 15px;
+  height: 50px;
+  z-index: 10;
+  top: 0;
+  
+
+}
+
+.cart-mobile {
+  background-color:  #182e49;
+  color: white;
+  letter-spacing: normal;
+  text-align: right;
+  font-size: 13px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+}
+
+.cart-mobile a {
+  background-color:  #182e49;
+  color: white;
+  letter-spacing: normal;
+  text-decoration: none;
+  font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.logo-mobile {
+  margin: 0 auto;
+  position:relative;
+  height: 150px;
+  padding: 55px 118px;
+}
+
+.logo-mobile img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto
+  
+  }
+
+  .meniu-mobile, .cart-mobile {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .meniu-mobile div{
+    display: inline-block;
+  }
+
+  button {
+    overflow: visible;
+    height: 30px;
+    background-color:  #182e49;
+  }
+
+  body {
+    margin-top: 50px;
+  }
+
+ }
+
+ @media screen and (min-width: 470px) {
+   .header-mobile {
+     display: none;
+   }
+ }
