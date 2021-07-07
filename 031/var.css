@@ -1,0 +1,19 @@
+:root {
+    --h1: 30px;
+    
+    --h2: 40px;
+
+    --h3: 50px;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h1 span {
+    font-size: var(--h2);
+}
+
+h2{
+    font-size: var(--h3);
+}

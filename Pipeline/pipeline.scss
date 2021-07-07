@@ -1,0 +1,403 @@
+@import 'grid';
+
+*, :after, :before, input { 
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+$karla:'Karla', sans-serif;
+
+$roboto:'Roboto', sans-serif;
+
+body {
+    margin:0;
+    padding: 0;
+    background: #ffffff;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #6b7177;
+    font-weight: 400;
+}
+
+header{
+    height:75px;
+    background-color:  #353535;
+    top:0
+
+}
+
+.wrapper {
+    
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    background-color:  #353535bb; 
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    height: 75px;
+}
+
+
+.bar-left {
+    flex: 1 0 0;
+    justify-content: flex-start;
+
+    a {
+        padding: 5px 15px;
+    }
+    
+    span {
+        height: 20px;
+        letter-spacing: 1px;
+        font-family: $karla;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 13px;
+        
+    }
+}
+
+
+.logo {
+    padding: 15px 0px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    img {
+        width: 140px;
+    }
+    
+}
+
+.bar-right {
+    display: flex;
+    flex: 1 0 0;
+    justify-content: flex-end;
+
+    
+    a {
+        padding: 5px 15px; 
+        color: #ffffff
+    }
+
+    i {
+        height: 17px;
+        width: 17px;
+    }
+
+}
+
+
+    .video-container {
+        height: 480px;
+        overflow: hidden;
+        margin-top: 1px;
+
+        video {
+             width:100vw;
+        }
+    }
+
+    
+
+    .play {
+        padding:0 32px;
+        font-family: $roboto;
+        top: 200px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        
+     h1{
+            font-size: 38px;
+            margin: 0;
+        }
+
+        h5 {
+            font-size: 26px;
+            margin: 8px 0 0; 
+        }
+
+        img {
+            height: 80px;
+            width: 80px;
+        }
+    }
+
+    .featured {
+        padding: 96px 0;
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+}
+
+    .featured-img-cont {
+        padding: 0 32px;
+        display: flex;
+
+        p {
+            margin: 12px 0 8px;
+            font-family: $karla;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .price-wrapper {
+
+        margin: 4px 0;
+        text-align: center;
+
+        span{
+            margin: 4px 0;
+            font-family: $karla;
+            font-size: 15px;
+            font-weight: 700;
+
+            &.sale {
+                color: #e73131;
+            }
+            &.old {
+                margin: 16px 0 0 10px;
+                text-decoration: line-through;
+            }
+            &.sold {
+                font-style: italic;
+            }
+            }
+
+        }
+        
+
+    .featured-img {
+        padding: 0 16px;
+        position: relative;
+    }
+
+    .featured {
+        .h2{
+        margin: 0 0 32px;
+        padding: 0 0 16px;
+        font-family: $karla;
+        font-size: 16px;
+        text-align: center;
+     
+
+    .h2::after {
+        content: "";
+        width:30px;
+        height: 3px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: .2;
+    }
+    }
+}
+    .sticker {
+        float: left;
+        position: absolute;
+        left: 16px;
+        top: 0;
+        padding: 5px 10px;
+        background-color: #e73131;
+        color: #ffffff;
+        font-family: $karla;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .product-page {
+        padding: 64px 32px 32px 32px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1180px;
+
+        .gloves {
+            margin: 0 0 64px;
+            padding-left: 16px;
+            width:50%
+        }
+        
+  
+
+    .gloves-ul{
+
+  display: block;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+
+  li {
+      float: left;
+      margin: 8px 8px 5px 0;
+  }
+
+  
+        
+        img {
+            width:60px;
+            height:60px;
+        }
+    }
+}
+
+    .buy {
+        padding-left: 32px;
+        padding-right: 16px;
+        width: 50%;
+        
+
+        .headline{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            font-family: $roboto;
+            color: #3c3c3ce6;
+
+           
+
+            h1 {
+                margin: 0;
+                font-size: 32px;
+                color: #3c3c3ce6;
+            }
+
+            span {
+                font-family: $karla;
+                font-size: 22px;
+                text-align: right;
+                margin-bottom: 0;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        }
+
+            
+
+}
+
+.description {
+    p {
+        font-family: $roboto;
+        font-size: 18px;
+        color: rgba(60, 60, 60, 0.9);;
+    }
+}
+    
+
+    
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-legend {
+    span {
+        font-family: $karla;
+        font-size: 13px;
+        color: #3c3c3ce6;
+        letter-spacing: 1px;
+        opacity: 1;
+    padding-right: 6px;
+    margin-right: 5px;
+    border-right: 1px solid  rgba(60, 60, 60, 0.2);
+    font-weight: bold;
+
+
+    }
+}
+
+.newsletter-input {
+    h2 {
+        font-family: $karla;
+        font-size: 16px;
+        margin: 0 0 18px;
+        padding: 0 0 16px;
+    }
+
+        p {
+            font-family: $roboto;
+            font-size: 18px;
+            margin: 18px 0 0 ;
+        }
+    
+}
+
+.blockade-hq {
+    h2 {
+        font-family: $karla;
+        font-size: 16px;
+        margin: 0 0 18px;
+        padding: 0 0 16px;
+    }
+    p {
+        font-family: $roboto;
+        font-size: 18px;
+        margin: 18px 0 0 ;
+    }
+}
+
+// .contacts-flex {
+//     display: flex;
+//     flex-direction: column;
+//     align-content: flex-start;
+// }
+
+.homepage-icons {
+    padding: 96px 0;
+    font-size: 15px;
+   
+}
+
+.newsletter-big-wrapper {
+ padding-top: 96px;
+ padding-bottom: 96px;
+}
+
+footer {
+    .footer-img-container {
+        width: 62px;
+        height: 80px;
+    }
+}
+
+
+
+
+
+   
+
+    
+   
+
+
+
+
